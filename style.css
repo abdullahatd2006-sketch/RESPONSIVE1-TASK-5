@@ -97,12 +97,14 @@ body {
     width: 95%;
 }
 
-.inner-right button {
-    margin-top: 10px;
-    padding: 10px;
-    background: rgb(201, 7, 7);
-    border: none;
-    color: white;
+.hero-right {
+    width: 50%;
+    background: url('form_bg.jpg') no-repeat center bottom;
+    background-size: cover;
+    padding: 40px;
+    border: 1px solid #ddd;
+    position: relative;
+
 }
 
 .inner-right {
@@ -115,21 +117,9 @@ body {
 
 .inner-right p {
     font-size: 20px;
-    font-weight:bold ;
-    
+    font-weight: bold;
+
 }
-
-
-.hero-right {
-    width: 50%;
-    background: url('form_bg.jpg') no-repeat center bottom;
-    background-size: cover;
-    padding: 40px;
-    border: 1px solid #ddd;
-    position: relative;
-  
-}
-
 
 .inner-right input {
     margin-top: 10px;
@@ -147,26 +137,40 @@ textarea {
     box-sizing: border-box;
 
 }
-.form-header {
-  display: flex;
-  align-items: center;
- 
-}
-.questions-tag {
-  background: #a31111;
-  color: white;
-  padding: 15px 20px;
-  font-weight: bold;
-  font-size: 1.2rem;
-}
-.form-header h2 {
-  padding-left: 20px;
-  font-size: 1.4rem;
-  color: #333;
-  margin: 0;
+
+.inner-right button {
+    margin-top: 10px;
+    padding: 10px;
+    background: rgb(201, 7, 7);
+    border: none;
+    color: white;
 }
 
-.form-header h2 span { color: #1a4a7c; }
+.form-header {
+    display: flex;
+    align-items: center;
+
+}
+
+.questions-tag {
+    background: #a31111;
+    color: white;
+    padding: 15px 20px;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.form-header h2 {
+    padding-left: 20px;
+    font-size: 1.4rem;
+    color: #333;
+    margin: 0;
+}
+
+.form-header h2 span {
+    color: #1a4a7c;
+}
+
 /* Confidential  */
 .confidential {
     position: absolute;
@@ -188,8 +192,9 @@ textarea {
     padding: 15px;
     width: 30%;
     text-align: center;
-   border-right: 1px solid #ddd;
+    border-right: 1px solid #ddd;
 }
+
 .box hr {
     margin: 15px 0;
     border: 1px solid #ddd;
@@ -261,7 +266,8 @@ textarea {
     bottom: 12px;
     font-size: 13px;
 }
-.menu{
+
+.menu {
     width: 200px;
     height: 200px;
     color: #979797;
@@ -385,14 +391,15 @@ textarea {
         text-align: center;
         border-bottom: 1px solid #a50000;
     }
+
     .hero-right {
-        width: 100%; 
+        width: 100%;
         padding: 20px;
-        border: none; 
+        border: none;
     }
 
     .form-header {
-        flex-direction: column; 
+        flex-direction: column;
         align-items: flex-start;
     }
 
@@ -411,20 +418,20 @@ textarea {
         font-size: 16px;
     }
 
-    
-    .inner-right input, 
+
+    .inner-right input,
     .inner-right textarea {
         width: 100%;
-        max-width: 100%; 
+        max-width: 100%;
     }
 
     .inner-right button {
-        width: 100%; 
+        width: 100%;
         justify-content: center;
     }
 
     .confidential {
-        position: relative; 
+        position: relative;
         top: 0;
         right: 0;
         display: block;
@@ -480,19 +487,20 @@ textarea {
     .hero-left {
         width: 100%;
     }
+
     .hero-right {
-        width: 80%; 
-        margin: 0 auto; 
+        width: 100%;
+        margin: 0 auto;
         padding: 30px;
     }
 
     .confidential {
-        width: 150px; 
+        width: 150px;
         top: 20px;
         right: 10px;
         transform: rotate(5deg);
     }
-  
+
     .boxes {
         flex-wrap: wrap;
     }
@@ -518,53 +526,6 @@ textarea {
         width: 100%;
     }
 }
-@media screen and (max-width: 1415px) {
-    body {
-        border-left: 10px solid #686666;
-        border-right: 10px solid #686666;
-    }
-
-    .container {
-        width: 100%;
-    }
-
-    .hero {
-        flex-direction: column;
-    }
-
-    .hero-left,
-    .hero-right {
-        width: 100%;
-    }
-  
-    .boxes {
-        flex-wrap: wrap;
-    }
-
-    .box {
-        width: 45%;
-        margin-bottom: 20px;
-    }
-
-    .content {
-        flex-direction: column;
-    }
-
-    .left,
-    .center,
-    .right {
-        width: 100%;
-        padding: 10px;
-    }
-
-    textarea,
-    .hero-right input {
-        width: 100%;
-    }
-}
-
-
-
 
 
 
